@@ -1,0 +1,53 @@
+<html>
+<body>
+<form action="https://secure.pay1.de/client-api/" method="POST">
+
+    <input type="hidden" name="portalid" value="2034634">
+
+    <input type="hidden" name="aid" value="47578">
+
+    <input type="hidden" name="mode" value="test">
+
+    <input type="hidden" name="request" value="bankaccountcheck">
+
+    <input type="hidden"
+
+           name="successurl" value="http://www.yoursite.com/success.php">
+
+    <input type="hidden"
+
+           name="errorurl" value="http://www.yoursite.com/error.php">
+
+    <input type="hidden" name="hash" value="70eaec2a33fa1b4674c0b1ge5e982966">
+
+    <input type="hidden" name="responsetype" value="REDIRECT">
+
+    <input type="hidden" name="language" value="en">
+
+    <input type="hidden" name="bankcountry" value="DE">
+
+    <table>
+
+        <tr>
+
+            <td>Account number</td>
+
+            <td><input type="text" name="bankaccount"></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Sort code</td>
+
+            <td><input type="text" name="bankcode"></td>
+
+        </tr>
+
+    </table>
+
+    <input type="submit" value="Buy now!">
+
+</form>
+</body>
+</html>
