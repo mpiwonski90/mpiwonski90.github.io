@@ -148,18 +148,18 @@
                                                      // (default: Payone.ClientApi.Language.en)
     };
     request = {
-		//api_version: '3.11',
+		api_version: '3.11',
         request: 'creditcardcheck',                  // fixed value
         responsetype: 'JSON',                        // fixed value
         mode: 'test',                                // desired mode
         mid: '47552',                                // your MID
         aid: '47578',                                // your AID
         portalid: '2034634',                         // your PortalId
-        //encoding: 'UTF-8',                           // desired encoding
+        encoding: 'UTF-8',                           // desired encoding
         storecarddata: 'yes',                        // fixed value
         // hash calculated over your request-parameter-values (alphabetical request-order) plus PMI portal key
         // hash: '1cf456bf692453613ebb992a3fb859cc347ddc7e94e2ca764efbe8b0089de6964ab1266df0831e59de89dc5291070fe7'
-        hash: '02b008c6e33a47d9ee631588b588669f895d0b0fad8d2048cb61dc33c59dad9447e1cdc7398425d01bd9d90e6bdc45d1'     // see Chapter 3.1.5.3
+        hash: 'c600654d97ad651f74c2379ee9cc8b9e'     // see Chapter 3.1.5.3
     };
     var iframes = new Payone.ClientApi.HostedIFrames(config, request);
     function check() {                               // Function called by submitting PAY-button
